@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1, .h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+h2, .h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+h3, .h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+h4, .h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+h5, .h5 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+p {
+  font-size: 1rem;
+}
+
+@media (max-width: 992px) {
+  h1, .h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+
+  h2, .h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.5;
+  }
+
+  h3, .h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 1.5;
+  }
+
+  h4, .h4 {
+      font-size: 1.125rem;
+      font-weight: 700;
+      line-height: 1.5;
+  }
+
+  h5, .h5 {
+      font-size: 1rem;
+      font-weight: 300;
+      line-height: 1.5;
+  }
+}
+
+.cyma-sect {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+#cyma-slider-sect {
+    min-height: 300px;
+}
+
+#nuestra-mision-sect {
+    background-image: url("../images/nuestra-mision-min.jpg"); 
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+#contacto-sect {
+  background-image: url("../images/contacto-cyma.jpg"); 
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 100px;
+  padding-bottom: 10%;
+}
+
+#cyma-servicios-sect {
+    background-color: rgb(224, 224, 224);
+}
+
+#cyma-dondeestamos-sect {
+  background-color: #2c2c2c;
+  padding-bottom: 0px
+}
+
+#cyma-prefooter-sect {
+  background-color: black;  
+  padding: 10% 0;
+}
+
+#cyma-link {
+  color: #fff;
+  text-decoration: none; 
+  cursor: pointer; 
+}
+
+#cyma-link:hover {
+  color: #d87275;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+#portfolio-sect {
+  margin-top: 56px;
+}
+
+#cyma-home-footer {
+  color: #737373;
+  background-color: #0c0c0d;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#footer-text {
+  font-size: 0.9rem;
+  color: #737373;
+}
+
+.slide {
+    background: url('../images/slider/cyma-arquitectura-slider-4.jpg');
+    max-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    background-size: cover; 
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;   
+    transition: 10s; 
+}
+
+.carousel-inner img:hover {
+  transform: scale(1.1);    
+}
+
+.carousel-item {
+    max-height: 100vh;
+    min-height: 200px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;    
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 70%;
+    transform: translateY(-70%);
+}
+
+.carousel-caption .h1 .h2 {
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+    letter-spacing: 2px;
+}
+
+.carousel-caption p {
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+    letter-spacing: 1px;
+}
+
+.slider-tittle-effect {
+	-webkit-animation: slider-tittle-effect 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+	        animation: slider-tittle-effect 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) 0.5s both;
+}
+
+ @-webkit-keyframes slider-tittle-effect {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes slider-tittle-effect {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  }
+  @keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  } 
+
+.btn-outline-success-cyma {
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+  
+.btn-outline-success-cyma:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-color: #ffffff;
+    color: #000000;
+    text-shadow: none;
+  }
+  
+  .carousel-inner .btn-outline-success-cyma:focus, .btn-outline-success.focus {
+    box-shadow: 0 0 0 0.2rem rgba(223, 223, 223, 0.5);
+  }
+
+  .carousel-inner .btn-outline-success-cyma2 {
+    color: #ffffff;
+    border-color: #ffffff;
+    background-color: rgba(237, 28, 36, 0.7);
+    text-shadow: none;
+  }
+  
+  .carousel-inner .btn-outline-success-cyma2:hover {
+    color: #fff;
+    background-color: #ed1c24; 
+    border-color: #ed1c24;
+    text-shadow: none;
+  }
+  
+  .carousel-inner .btn-outline-success-cyma2:focus, .btn-outline-success.focus {
+    box-shadow: 0 0 0 0.2rem rgba(237, 28, 36, 0.5);
+  }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 56px;
+  height: 56px;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' width='8' height='8' viewBox='0 0 51.25 96.85'%3e%3cpath d='M50.5 92.2 6.73 48.43 50.5 4.66A2.6 2.6 0 0 0 50.5 1L50.24.75a2.58 2.58 0 0 0-3.64 0L.75 46.6A2.57 2.57 0 0 0 0 48.43a2.61 2.61 0 0 0 .75 1.83L46.6 96.1a2.58 2.58 0 0 0 3.64 0l.26-.26A2.58 2.58 0 0 0 50.5 92.2Z'/%3e%3c/svg%3e");
+  }
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' width='8' height='8' viewBox='0 0 51.25 96.85'%3e%3cpath d='M.75 4.66 44.52 48.43.75 92.2a2.58 2.58 0 0 0 0 3.64L1 96.1a2.6 2.6 0 0 0 3.65 0L50.5 50.26a2.61 2.61 0 0 0 .75-1.83 2.57 2.57 0 0 0-.75-1.83L4.66.75A2.6 2.6 0 0 0 1 .75L.75 1A2.6 2.6 0 0 0 .75 4.66Z'/%3e%3c/svg%3e");
+}
+
+.slider-cyma-down {
+  position: absolute;
+  font-size: 32px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.slider-cyma-down i {
+  box-sizing: content-box;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  cursor: pointer;
+  color: #ffffff;
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 20px solid transparent;
+  opacity: .5;
+  transition: opacity .6s ease;
+}
+
+.slider-cyma-down :hover {
+  opacity: 1;
+  transition: opacity .6s ease;
+}
+
+.navbar-light{
+    background-color: rgba(255, 255, 255, 0.822);
+}
+
+  .navbar .btn-outline-success {
+    color: #ed1c24;
+    border-color: #ed1c24;
+  }
+  
+  .navbar .btn-outline-success:hover {
+    color: #fff;
+    background-color: #ed1c24;
+    border-color: #ed1c24;
+  }
+  
+  .navbar .btn-outline-success:focus, .btn-outline-success.focus {
+    box-shadow: 0 0 0 0.2rem rgba(237, 28, 36, 0.5);
+  }
+
+  .navbar-nav {
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: 300;  
+      padding-left: 10px;    
+  }
+
+  .navbar-light .navbar-toggler {
+    border: none;
+  }
+
+.cyma-brand {
+    width: 100px;
+    height: 33px;
+    padding-right: 20px;
+    border-right: solid 1px #000000;
+}
+
+@media (max-width: 992px) {
+    .cyma-brand {
+        margin-left: auto;
+        margin-left: calc(50% - 80px);
+        margin-right: auto;
+        width: 80px;
+        height: 26px;
+        border: none;
+    }
+}
+
+.fbox-icon {
+    width: 128px;
+    height: 128px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin: 5px auto;
+    align-items: center;
+    justify-content: center;
+    background-color: #ed1c24;
+    background-image: url('../images/SVG/iconalt.svg');
+    background-position: center center;
+    background-repeat: none;
+    background-size: 100% 100%;
+    font-size: 3em;
+    color: #ffffff;
+    border-radius: 3px;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.fbox-icon:hover {
+  background-color: rgba(237, 28, 36, 0.5);
+}
+
+.fbox-icon .fas {
+    margin-top: 0;
+    margin-bottom: auto;
+    text-align: center;
+    z-index: 1;
+} 
+
+.btn-social-link-footer {
+  color: #ffffff;
+  border-color: #ffffff;
+  border-radius: 100%;
+  background-color: rgba(237, 28, 36, 0.7);
+  text-shadow: none;
+}
+
+.btn-social-link-footer:hover {
+  color: #fff;
+  background-color: #ed1c24; 
+  text-shadow: none;
+}
+
+.invalid-feedback-cyma1 {
+  color: #ffa2a5;
+}
+
+.contacto-container1 {
+  padding: 20px 5px;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.4);  
+}
+
+.card-body-cyma {
+  position: absolute;
+  z-index: 200;
+  background-color: rgba(255, 255, 255, 0.7);
+  top: 50%;
+  transform: translateY(-70%);
+  width: 100%;
+  padding: 10px 5px;
+}
+
+.card-tittle-cyma {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.card-year-cyma {
+  font-size: 0.925rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.cyma-portfolio-sect-1:hover {
+  background-color: #333;
+  transition: 0.6s;
+}
+
+.cyma-portfolio-sect-1 a {
+  background-color: rgb(236, 236, 236);
+  color: #333;
+}
+
+.cyma-portfolio-sect-1 a:hover {
+  color: rgb(236, 236, 236);
+  text-decoration: none;
+  transition: 0.6s;
+}
+
